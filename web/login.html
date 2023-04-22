@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+     <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId">
+        <li class="nav-item">
+            <a href="profileServlet" class="nav-link active">Profile</a>
+        </li>
+      
+        <li class="nav-item">
+            <a href="login.html" class="nav-link">login</a>
+        </li>
+        <li class="nav-item">
+            <a href="logoutServlet" class="nav-link disabled">logout</a>
+        </li>
+    </ul>
+    
+ 
+    
+    <!-- <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script> -->
+        
+        <form name="loginForm" method="get" action="loginServlet">
+            <input type="text" name="uname" placeholder="Enter First name" required/> <br/>
+            <input type="password" name="pass" placeholder="Enter Password" required/> <br>
+    <input type="submit" value="Login" required/>
+</form>
+    </body>
+</html>
